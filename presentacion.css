@@ -1,0 +1,199 @@
+* {
+  background-color: lightblue; }
+
+@media screen and (max-width: 324px) {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; }
+
+  .fotoynombre {
+    border: 1px black solid;
+    margin: 10px;
+    margin-left: 30vw;
+    padding: 10px;
+    max-width: 50vw;
+    display: inline-block;
+    text-align: center; }
+    .fotoynombre .fibo {
+      width: vw;
+      height: 12vh;
+      margin: auto;
+      display: block; }
+
+  .redes {
+    border: 1px solid black;
+    width: 100vw;
+    height: 35px;
+    display: flex;
+    justify-content: space-around; }
+
+  .trabajoyedu {
+    border: 1px solid red;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px; }
+    .trabajoyedu .trabajo {
+      border: 1px solid black;
+      margin-bottom: 15px;
+      color: blue;
+      text-align: justify;
+      display: block; }
+    .trabajoyedu .edu {
+      border: 1px solid black;
+      max-width: 100%;
+      color: chocolate;
+      text-align: justify;
+      display: block; }
+
+  .skills {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px; }
+    .skills div {
+      border: 1px solid red;
+      margin: 5px;
+      width: 40%;
+      margin-left: 5%;
+      display: inline-block;
+      text-align: center; } }
+@media screen and (max-width: 380px) {
+  * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; }
+
+  .fotoynombre {
+    border: 1px black solid;
+    margin: 10px;
+    margin-left: 30vw;
+    padding: 10px;
+    max-width: 50vw;
+    display: inline-block;
+    text-align: center; }
+    .fotoynombre .fibo {
+      width: 30vw;
+      height: 14vh;
+      margin: auto;
+      margin-bottom: 5%;
+      display: block; }
+
+  .redsoc {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 45%;
+    display: inline-block; }
+    .redsoc img {
+      width: 35px;
+      height: 35px; }
+
+  .trabajoyedu {
+    border: 1px solid red;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px; }
+    .trabajoyedu span {
+      display: none; }
+    .trabajoyedu :hover p {
+      display: none;
+      border: 1px solid black; }
+    .trabajoyedu :hover span {
+      display: block;
+      border: 1px solid black; }
+    .trabajoyedu :hover .trabajo {
+      border: 1px solid black;
+      margin-bottom: 15px;
+      color: blue;
+      text-align: justify;
+      display: block; }
+    .trabajoyedu :hover .edu {
+      border: 1px solid black;
+      max-width: 100%;
+      color: chocolate;
+      text-align: justify;
+      display: block; }
+
+  .skills {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px; }
+    .skills div {
+      border: 1px solid red;
+      margin: 5px;
+      width: 40%;
+      margin-left: 5%;
+      display: inline-block;
+      text-align: center; } }
+@media screen and (min-width: 381px) {
+  .fotoynombre {
+    border: 1px black solid;
+    padding: 10px;
+    max-width: 100%; }
+    .fotoynombre .fibo {
+      width: 200px;
+      height: 200px; }
+    .fotoynombre .nombre {
+      font-size: 3em;
+      text-align: center; }
+
+  .redsoc {
+    border: 1px solid black;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center; }
+    .redsoc .redes div {
+      border: 1px solid black;
+      width: 10%;
+      display: inline-block;
+      text-align: center; }
+    .redsoc img {
+      width: 35px;
+      height: 35px; }
+
+  .trabajoyedu {
+    border: 1px solid red;
+    margin: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    /* arreglar para que cuando hoveree los p, aparezcan los span */ }
+    .trabajoyedu span {
+      display: none; }
+    .trabajoyedu :hover p {
+      display: none;
+      border: 1px solid black; }
+    .trabajoyedu :hover span {
+      display: block;
+      border: 1px solid black;
+      max-width: 100%;
+      width: 100%;
+      height: 50px;
+      text-align: center; }
+    .trabajoyedu :hover .trabajo {
+      border: 1px solid black;
+      margin-bottom: 15px;
+      color: blue;
+      text-align: justify;
+      display: block; }
+    .trabajoyedu :hover .edu {
+      border: 1px solid black;
+      max-width: 100%;
+      color: chocolate;
+      text-align: justify;
+      display: block; }
+
+  .skills {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly; }
+    .skills div {
+      border: 1px solid red;
+      margin: 5px;
+      width: 10%; } }
+
+/*# sourceMappingURL=presentacion.css.map */

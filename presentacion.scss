@@ -1,0 +1,335 @@
+*{
+    background-color: lightblue;
+}
+
+@media screen and (max-width: 324px) {
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+        font-size: 24px;
+    }
+    .fotoynombre{
+        border: 1px black solid;
+        margin: 10px;
+        margin-left: 30vw;
+        padding: 10px;
+        max-width: 50vw;
+        display: inline-block;
+        text-align: center; 
+        & .fibo{
+            width: vw;
+        height: 12vh;
+        margin: auto;
+        display: block;
+        }       
+    }   
+        
+    .redes{
+            border: 1px solid black;  
+            width: 100vw;
+            height: 35px; 
+            display: flex;
+            justify-content: space-around;
+    }            
+    
+     .trabajoyedu {
+        border: 1px solid red;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 10px;  
+        & .trabajo{
+            border: 1px solid black;
+            margin-bottom: 15px;        
+            color: blue;
+            text-align: justify;
+            display: block;            
+        }  
+        & .edu{
+            border: 1px solid black;
+            max-width: 100%;
+            color: chocolate;
+            text-align: justify;
+            display: block;
+        } 
+      
+        }
+        .skills {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            & div {
+                border: 1px solid red;
+                margin: 5px;  
+                width: 40%; 
+                margin-left: 5%; 
+                display: inline-block;
+                text-align: center;
+    
+            }
+        }
+    } 
+@media screen and (max-width: 380px) {
+    * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0; 
+        font-size: 24px;
+    }
+    header {
+        width: 100%;
+        position: fixed;
+        height: 45px;
+        top: 0;
+        padding: 10px 5%;
+    }
+    header img {
+        float: left;
+    }
+    header nav {
+        float: right;
+    }
+    header nav .menu ul {
+        /*posicion absolute para que se posicione debajo del resto del header - top medida del header*/
+        width: 100%;
+        position: absolute;
+        top: 45px;
+        right: 0;
+        overflow: hidden;
+        list-style: none;
+        background: #f2f2f2;
+        height: 0px;
+        transition: height 0.5s ease;
+    }
+    header nav .menu  ul li {
+        position: relative;
+    } 
+    header nav .menu  ul li:hover {
+        background: #5a5a5a;
+    } 
+    header nav .menu ul li a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        padding: 16px 5%;
+        line-height: 28px;
+        display: block;
+    }
+    header nav .menu  ul li a:hover {
+        color: #fff;
+    } 
+    /*animación del menu que se desplega*/
+    header nav .menu input[type="checkbox"]:checked ~ ul {
+        height: 240px;
+        transition: height 0.5s ease-in-out;
+        -moz-transition: height 0.5s ease-in-out;
+        -o-transition: height 0.5s ease-in-out;
+        -webkit-transition: height 0.5s ease-in-out;
+    }
+    header nav .menu {
+        padding-top: 3px;
+    }
+    /*checkbox transparente y en primer plano*/
+    header nav .menu input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        opacity: 0;
+        z-index: 2;
+        position: absolute;
+    }
+    /*span -lineas del menu hamburguesa-*/
+    header nav .menu span {
+        display: block;
+        width: 25px;
+        height: 2.5px;
+        margin-bottom: 6.5px;
+        position: relative;
+        background: #000;
+        z-index: 1;
+        transform-origin: 3px 0px;
+        transition: transform 0.5s ease,
+            opacity 0.55s ease;
+    }
+    header nav .menu span:first-child {
+        transform-origin: 0% 0%;
+    }
+    header nav .menu span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+    /*movimiento a cruz*/
+    header nav .menu input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(2px, 1px);
+    }
+    header nav .menu input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    header nav .menu input:checked ~ span:nth-last-child(2) {
+        transform: rotate(-45deg) translate(1px, 0px);
+    }
+    .fotoynombre{
+        border: 1px black solid;
+        margin: 10px;
+        margin-left: 30vw;
+        padding: 10px;
+        max-width: 50vw;
+        display: inline-block;
+        text-align: center; 
+        & .fibo{
+            width: 30vw;
+            height: 14vh;
+            margin: auto;
+            margin-bottom: 5%;
+            display: block;
+        }       
+    }   
+    .redsoc {
+        border: 1px solid black;
+        padding: 10px; 
+        max-width: 45%; 
+        display: inline-block;
+        & img{
+            width: 35px;
+            height: 35px; 
+        }     
+    }
+    .trabajoyedu {
+        border: 1px solid red;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 10px; 
+            & span {
+                display: none;
+            }
+        & :hover {
+            p{
+            display: none;
+            border: 1px solid black;
+        } 
+            span {
+                display: block;
+                border: 1px solid black;
+            }
+         
+        & .trabajo{
+            border: 1px solid black;
+            margin-bottom: 15px;        
+            color: blue;
+            text-align: justify;
+            display: block; 
+        }  
+        & .edu{
+            border: 1px solid black;
+            max-width: 100%;
+            color: chocolate;
+            text-align: justify;
+            display: block;
+        }
+    }
+}
+    .skills {
+        border: 1px solid black;
+        margin: 5px;
+        padding: 10px;
+        & div {
+            border: 1px solid red;
+            margin: 5px;  
+            width: 40%; 
+            margin-left: 5%; 
+            display: inline-block;
+            text-align: center;
+
+        }
+    }
+
+}
+@media screen and (min-width: 381px) {
+    
+    .fotoynombre{
+        border: 1px black solid;      
+        padding: 10px;
+        max-width: 100%; 
+        & .fibo{
+            width: 200px;
+            height: 200px;
+        } 
+        & .nombre{
+            font-size: 3em;
+            text-align: center;
+        }      
+    } 
+    .redsoc {
+        border: 1px solid black;
+        padding: 10px; 
+        max-width: 100%;
+        text-align: center;
+        & .redes div {
+            border: 1px solid black;
+            width: 10%;
+            display: inline-block;
+            text-align: center;
+        }        
+        & img{
+            width: 35px;
+            height: 35px;             
+        }     
+    }
+    .trabajoyedu {
+        border: 1px solid red;
+        margin: 5px;
+        margin-bottom: 20px;
+        padding: 10px; 
+            & span {
+                display: none;
+            }
+        & :hover {
+            p{
+            display: none;
+            border: 1px solid black;
+        } 
+            span {
+                display: block;
+                border: 1px solid black;
+                max-width: 100%;
+                width: 100%;
+                height: 50px;
+                text-align: center;
+            }
+         
+        & .trabajo{
+            border: 1px solid black;
+            margin-bottom: 15px;        
+            color: blue;
+            text-align: justify;
+            display: block; 
+        }  
+        & .edu{
+            border: 1px solid black;
+            max-width: 100%;
+            color: chocolate;
+            text-align: justify;
+            display: block;
+        }
+    }
+        /* arreglar para que cuando hoveree los p, aparezcan los span */
+        
+        } 
+        .skills {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            & div {
+                border: 1px solid red;
+                margin: 5px;  
+                width: 10%; 
+            }
+        }  
+    }
+ 
+    
